@@ -1,0 +1,73 @@
+Client(r10005) is starting... 2023-04-17 17:17:44
+Failed to open directory: mod/Data
+Failed to open directory: mod/Data
+No resource.g file in directory: mod
+Bad string table entry 'unit_maxSpeed'
+Bad string table entry 'Max Speed'
+Bad string table entry 'unit_max100'
+Bad string table entry '0-100'
+Bad string table entry 's'
+Cannot find right pixel format for multisample(16x)
+Failed to find filter; name=Chorus Filter
+Failed to find filter; name=Delay Filter
+Failed to find filter; name=Flange Filter
+Failed to find filter; name=Phaser Filter
+Could not find material 'material.AX_7_R2.tire_AX_7_R2'
+Could not find car path: 'car.GT40'
+no valid tire for 
+no valid brake for 
+no valid engine for 
+no valid clutch for 
+no valid transmission for 
+no valid suspension for 
+no valid tuning for 
+Failed to open file (0x5)
+Failed to open memory map for 'Resource/'
+failed to load node: 
+no valid tire for 
+Could not find car path: 'car.GT40_2'
+no valid tire for 
+no valid brake for 
+no valid engine for 
+no valid clutch for 
+no valid transmission for 
+no valid suspension for 
+no valid tuning for 
+no valid tire for 
+Could not find car path: 'car.GT40_3'
+no valid tire for 
+no valid brake for 
+no valid engine for 
+no valid clutch for 
+no valid transmission for 
+no valid suspension for 
+no valid tuning for 
+no valid tire for 
+Missing string table entry 'str_choose'
+cannot find image definition [maker.ford.image]
+Missing string table entry 'str_entance_limit'
+Missing string table entry 'str_entance_begin'
+Missing string table entry 'str_entance_end'
+Missing string table entry 'str_exercise_game'
+Missing string table entry 'str_lap_stage'
+Missing string table entry 'str_channel_range'
+Missing string table entry 'str_range_normal'
+Missing string table entry 'str_game_mode'
+Missing string table entry 'str_normal_game'
+Missing string table entry 'str_car_change'
+Missing string table entry 'str_close_slots'
+Missing string table entry 'str_get_records'
+Missing string table entry 'str_kick_slot'
+Missing string table entry 'str_return_car'
+Missing string table entry 'rewards_title'
+Missing string table entry 'rewards_message'
+anchor(2,0)[champNavDown] is already exists!
+Missing string table entry 'control_enginevibr'
+Missing string table entry 'cmd_search_club_reset'
+Missing string table entry 'car_spec_initial'
+Missing string table entry 'car_spec_tuned'
+Missing string table entry 'unit_maxSpeed'
+Missing string table entry 'unit_max100'
+Missing string table entry 'str_buy_item_title'
+Missing string table entry 'str_basic_car'
+Missing string table entry 'str_owned_car'
