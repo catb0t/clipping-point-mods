@@ -44,17 +44,17 @@ garage_garage_menu Garage
 garage_item_menu Items
 garage_quest_menu Quests
 garage_rank_menu "My Rank"
-race_normal_menu "Normal Race"
+race_normal_menu Normal
 race_time_attack_menu "Time Attack"
-race_event_menu "Custom Race"
+race_event_menu Custom
 race_quick_race_menu "Quick Race"
-race_championship_menu "Mission Race"
+race_championship_menu Mission
 quick_race "Quick Race"
 time_attack "Time Attack"
 license_beginner_menu Beginner
 license_amateur_menu Amateur
-license_pro_menu Professional
-license_champ_menu Championship
+license_pro_menu Pro
+license_champ_menu Champ
 shop_car_menu "Car Shop"
 shop_tuning_menu "Tuning Shop"
 shop_staff_menu "Staff Shop"
@@ -65,14 +65,13 @@ opt_video_menu Video
 opt_audio_menu Audio
 opt_control_menu Control
 opt_macro_menu Macro
-opt_steer_rate "Steer Rate"
 opt_hotkey Hotkey
+opt_steer_rate "Steer Rate"
 # menu descriptions ##
 desc_exit_menu Exit
 desc_garage_menu "Go to Garage Menu"
 desc_race_menu "Go to Race Menu"
-desc_license_menu
-    "Go to License Menu"
+desc_license_menu "Go to License Menu"
 desc_shop_menu "Go to Shop Menu"
 desc_options_menu "Go to Option Menu"
 desc_replay_menu "View Replay"
@@ -86,16 +85,16 @@ desc_garage_item_menu "Select items"
 desc_garage_quest_menu "Select quests"
 desc_garage_rank_menu "View Rank"
 desc_race_normal_menu "Normal Race"
+desc_race_amateur_menu "Amateur Race"
+desc_race_pro_menu "Professional Race"
+desc_race_champ_menu "Champ Race"
+desc_race_endurance_menu "Endurance Race"
 desc_race_time_attack_menu "Time Attack Race"
 desc_race_event_menu "Custom Race"
-desc_license_beginner_menu
-    "Beginner license"
-desc_license_amateur_menu
-    "Amateur license"
-desc_license_pro_menu
-    "Professional license"
-desc_license_champ_menu
-    "Champion license"
+desc_license_beginner_menu "Beginner license"
+desc_license_amateur_menu "Amateur license"
+desc_license_pro_menu "Professional license"
+desc_license_champ_menu "Champion license"
 desc_shop_car_menu "Car Shop"
 desc_shop_tuning_menu "Tuning Shop"
 desc_shop_staff_menu "Staff Shop"
@@ -114,21 +113,16 @@ str_cur_driver "Current Driver"
 str_cur_money "Current Money"
 str_help Help
 str_nocar "No Car"
-str_basic_car "Basic Car"
-str_owned_car "Owned Car"
-str_must_select_car "You must select a car."
 str_garage_chat_win_title Chatting
-str_welcome "Welcome to Clipping Point!!!"
-str_finish_tutorial "You can get a car by completing the tutorial in the driving school."
-str_racequeen_exceeded 
-    "The number of race queens we are hiring is too many for our current garage.
-     You can expand your garage in the garage menu."
+str_welcome Welcome!
+str_finish_tutorial "Finish tutorial first."
+str_racequeen_exceeded "Too many race quuens for your current garage."
 str_ask_logout Logout?
 str_waiting_server "Still waiting for response from server..."
 str_level_points "Level %d / %d Points"
 str_expiration "Remaining: %d days"
 str_expiration_unlimited Wide
-str_fatal_car_error "Fatal car data error!"
+str_fatal_car_error "Fatal car error!"
 str_unknown_slash_cmd "Unknown command: %s"
 # community window ##
 str_community Community
@@ -142,10 +136,10 @@ cmd_join_club Join
 cmd_quit_club Quit
 cmd_accept_join Accept
 cmd_search_club Find
-cmd_search_club_reset "Reset Club"
 str_show_online_only "Show online only"
 str_unregister "Remove on list"
 str_promote Promote
+str_myghost "My ghost"
 str_demote Demote
 str_quit_club "Quit club"
 str_unmute Unmute
@@ -253,10 +247,6 @@ str_send_memo "Send Memo"
 str_invite Invite
 str_open_slot Open
 str_close_slot Close
-str_close_slots "Close all"
-str_open_slots "Open all"
-str_get_records "Get records"
-str_kick_slot "Kick out"
 str_ban_slot Ban
 str_server_notice Notice
 str_add_friend "Add Friend"
@@ -279,11 +269,9 @@ str_cannot_sell_one_car "You cannot sell last car."
 str_confirm_buy_slot "You need the money for expanding garage."
 str_confirm_buy_part "You need the money for part."
 str_confirm_buy_part_fmt "You need the money for part (The car's grade'll be changed.(%S -> %S))"
-str_confirm_buy_decal "Previous decal will be replaced by this."
 str_confirm_buy_fmt "Do you buy a %s?"
 str_no_decal_location "There is no decal location for current car."
 str_remove_decal_msg "Select a decal to remove."
-str_warn_car_class_chg "If you install this part, the car's grade'll be changed.(%S -> %S)"
 str_confirm_gift "'ll receive a present."
 str_shutter_comment1 "Garage space expanded 3 slots at once,"
 str_shutter_comment2 "and maximum 45 slots is available."
@@ -301,10 +289,10 @@ str_quest_reward "● Reward"
 str_quest_done Done
 str_quest_new New
 str_quest_get_reward Get
-str_quest_reward_money "● Reward money:"
-str_quest_reward_no_option "● Additional reward."
-str_quest_reward_option "● Select your reward."
-str_reward_car_not_match "To recieve the reward, you must use the same car that completed the quest."
+str_quest_reward_money "Reward money:"
+str_quest_reward_no_option "Additional reward."
+str_quest_reward_option "Select your reward."
+str_reward_car_not_match "Car does not match."
 # garage/rank ##
 str_waiting_for_ranks "Waiting for ranks..."
 str_rank %dth
@@ -347,7 +335,6 @@ err_join_full "Cannot join channel. Channel is full."
 err_join_pwd_mismatch "Cannot join channel. Password is wrong."
 err_join_in_race "Cannot join channel. Race in progress."
 err_join_banned "Cannot join channel. You are banned."
-err_join_out_of_range "Owned driving license is not appropriate for this race."
 str_pwd_required "Password is required."
 str_channel_title_required "Title is required."
 str_title_cannot_compose_only_spaces "Title cannot compose only spaces."
@@ -358,10 +345,7 @@ str_individual Individual
 str_team Team
 str_num_players Players
 str_num_teams Teams
-str_entance_limit "Admission Restricton (Driving School)"
 str_limit "Join Condition"
-str_entance_begin From
-str_entance_end To
 str_private Private
 str_dualMode "Dual Mode"
 str_power_range "Power Range"
@@ -369,8 +353,6 @@ str_license License
 str_category Category
 str_title Title
 str_num_laps Laps
-str_lap_stage "Lap stage"
-str_num_lap_fmt "%d / Max %d"
 str_collision_delayed "Collision Delay"
 str_team_collision "Team Collision"
 str_select_light Light
@@ -441,7 +423,7 @@ str_difficulty5 "Very Hard"
 str_ch_difficulty0 Easy
 str_ch_difficulty1 Medium
 str_ch_difficulty2 Hard
-str_ch_difficulty3 all
+str_ch_difficulty2 all
 str_join_lobby_msg "Joined to %s"
 str_on_join "on join..."
 str_cannot_find_game "cannot find the game."
@@ -450,8 +432,6 @@ str_invalid_power "Invalid car power."
 str_channer_under_guide "You need to increase your hp or decrease mass for joining the channel."
 str_channer_over_guide "You need to decrease your hp or increase mass for joining the channel."
 str_chat_quota_exceed "Your quota for chat-macro exceeded."
-str_must_select_ch_car "You need to select proper level of car."
-str_total_drift_point "Drift Point"
 # lobby ##
 lobby_garage Garage
 lobby_license License
@@ -501,22 +481,14 @@ str_result_total Result
 str_insufficient_funds "Insufficient Funds"
 str_need_money_fmt "Insufficient %d gold"
 str_need_cash_fmt "Insufficient %d cash"
-str_insufficient_garage_slot "You need to expand your garage."
-str_over_garageslot
-    "Some vehicles cannot be used because they exceed the limit of the current garage.
-     Please sell your vehicle or expand your garage."
-str_cannot_buy_more_slot "Cannot buy more slots."
+str_insufficient_garage_slot "Insufficient Garage"
+str_over_garageslot "over garage slot"
+str_cannot_buy_more_slot "Cannot buy more slot."
 str_confirm_buy_car "Are you sure you want to buy this car?"
-str_choose "Please select the color of your vehicle."
 str_confirm_buy_part "Are you sure you want to buy this part?"
-str_con_purchase 
-    "Congratulations on your purchase!
-     Purchased vehicles or parts can be managed in the garage."
-str_con_purchase_slot_fmt 
-    "Congratulations! 
-     Now, your garage can manage %d cars!"
+str_con_purchase "Congratulations on your purchase!"
+str_con_purchase_slot_fmt "Now, your garage can manage %d cars!"
 str_default_part ""
-car_repair_charge "Repair car"
 str_repair_car "This is coast. Do you want?"
 str_car_ok "This car is ok."
 str_make_current_car "Make this your current car?"
@@ -538,12 +510,12 @@ str_select_after_hiring "Select after hiring(only for driver)"
 str_part_equipped "Purchased parts are equipped."
 str_staff_selected "Hired staff is selected."
 str_select_driver "Change driver"
-str_carclass_changed "The class of the car was changed by detaching/attaching parts."
-str_staff_shop "'Clipping Point' Agency"
-str_staff_shop_desc1 "You can hire drivers, engineers"
-str_staff_shop_desc2 " and race queens "
+str_carclass_changed "A Car class'll is changed."
+str_staff_shop "'CP' Agency"
+str_staff_shop_desc1 "You can hire your driver, engineer "
+str_staff_shop_desc2 " and pit-babe "
 str_staff_shop_desc3 "You have to give salary to them."
-str_staff_shop_desc4 "If you don't give salary to them, "
+str_staff_shop_desc4 "If you don't give salry to them, "
 str_staff_shop_desc5 "they will leave you."
 str_hire_success "Congratulations! Hired staffs."
 str_hire_failure "Hire fail"
@@ -552,9 +524,9 @@ str_staff_management "Staff management"
 str_no_such_staff "no staff."
 str_hire_staffs Staffs
 str_renew_period "Renew Period"
-str_hire_restriction "Drivers, race queens and engineers are non-refundable after hire."
-str_hire_restriction1 "After hiring driver, race queens, and engineers"
-str_hire_restriction2 "No refunds."
+str_hire_restriction "After driver and racing queen, can not refund them in the period."
+str_hire_restriction1 "After driver and racing queen,"
+str_hire_restriction2 "can not refund them in the period."
 str_hire_period_format " will be hired during %d days."
 str_change_drivername "Driver Name:"
 str_drivername "Driver Name:"
@@ -568,9 +540,7 @@ str_renew_failure "Failed to renew the period of employment."
 str_confirm_renewperiod "Are you sure you want to renew the period of employment?"
 str_period_of_employment Period
 str_fire_staff_desc "fire staff"
-str_expired_staff 
-    "There are personnel whose employment period has ended.
-     Please check it in the management menu of the garage."
+str_expired_staff "The period of employment is expired"
 str_confirm_attach_decal "Are you sure you want to attach the decal to car?"
 str_confirm_remove_decal "Are you sure you want to delete the decal?"
 str_warning_remove_decal "The existed decal'll be removed."
@@ -601,14 +571,12 @@ str_confirm_renew_staff "Do you really want to renew the staff?"
 str_confirm_renew_staff_fmt "Do you really want to renew the staff(%d days)?"
 str_staff_remaining "Remaing: %d-days"
 str_expired Expired!
-str_gift_failure "Failed to Gift. Please check the other person's name or garage space."
+str_gift_failure "Failed to Gift"
 str_gift_success "Succeeded to Gift."
 str_gift_car_subject "A Gift Car"
 str_gift_car_content "you received a car."
 str_max MAX
 str_buy_item BUY
-str_car_change "Change car"
-str_buy_item_title "Buy item"
 strength strength
 stamina stamina
 condition condition
@@ -635,9 +603,9 @@ str_car_no_point "0 point"
 str_car_point_fmt "%d point"
 str_car_experience Experience
 str_car_experience_fmt %d/%d
-str_car_power_trait Power
-str_car_accel_trait Acceleration
-str_car_grip_trait Grip
+str_car_power Power
+str_car_accel accel
+str_car_grip grip
 str_reset Reset
 str_lifespan Mileage
 str_reset_success "reset success"
@@ -665,7 +633,7 @@ ai_name_anonn -----
 # ai_name_11           "Eric"
 ai_name_1 Kay
 ai_name_2 Mordred
-ai_name_3 Gawain
+ai_name_3 "Gawain "
 ai_name_4 Agravain
 ai_name_5 Galahad
 ai_name_6 Gareth
@@ -673,7 +641,7 @@ ai_name_7 Lancelot
 ai_name_8 Bors
 ai_name_9 Pellinor
 ai_name_10 Bedivere
-ai_name_11 Percivale
+ai_name_11 "Percivale "
 # staff name ##
 staff_name_rachelGirl Rachel
 staff_name_lauraGirl Laura
@@ -681,81 +649,18 @@ staff_name_michaelGirl Michael
 staff_name_girlMD "Lady MD"
 staff_name_rookieDriver "Rookie Driver"
 staff_name_markoschmitz "Marko Schmitz"
-staff_name_martinhope "Martin Hope"
+staff_name_martinhope "Martin hope"
 staff_name_ryanPitcrew Ryan
-staff_name_kanghyungju Kang
 # staff description ##
-girl1.desc
-    " She was chosen to be a racer girl while she was auditioning to be a supermodel.
-     Her gorgeous eyes and slender build drew lots of fans.
-     She’s been invited to every major motor show, solidifying her status.
-     People view her as the image of high-end vehicles and rumors show that she is preparing to become a celebrity."
-girl2.desc
-    " Born in 1982, she worked as a graphic artist in the past.
-     After watching a car race with her boyfriend, she fell in love with car racing.
-     She grew tired of just watching all the racing games, so she quit her job and became a racer girl. "
-girl3.desc
-    " A married racer girl, you would never guess that was a mother of a 5-year old child from her good looks.
-     After getting married to one of her fans, she returned to her racing career.
-     Of course, she has loved all the support from her number one fan, her husband,
-     but unlike the other racer girls, her female fanbase has rapidly increased after getting married. "
-girl4.desc
-    " Born in 1986, she measures in at 172cm and a slender weight of 49kg.
-     She’s an expert dancer that gained fame from a variety of reality TV and game shows.
-     She also works as a fashion model,
-     but views herself as a racer girl,
-     and shares this view with most of her fans. "
-girl5.desc
-    " Born in 1983, she’s a rookie model who worked as a racer girl for only a year.
-     She majored in Transport Designs but don't let that fool you. She's also great at driving, too taking home 1st place at an amateur racing club.
-     Her long legs are her best feature giving her honors as the model with the best legs in her debut."
-girl_M.desc
-    " An aspiring model-to-be who majored in Korean Traditional Dance is currently training to become a model.
-     She started her racer girl career for the experience in the spotlight, but the job was engaging enough for her to keep her attention.
-     She’s giving it her all, but is still looking forward to the day she will debut as a fashion model. "
-driver1.desc
-    "A 20-year old who is striving to be the very best in whatever she does is currently part of a racing team working as an intern driver.
-     He still needs more experience, but his talents show that he has potential to be a great driver.
-     Luck doesn't win races; only practice will bring him to the top."
-driver2.desc
-    "A racer from the standard elite courses.
-     Thanks to his father working at Keiberg Corp., he began cart racing at the age of 5.
-     After growing up, he attended racing school and joined the Keiberg Junior Racing Team when he was only 14.
-     While he didn’t achieve any notable records during cart racing or when on the junior racing team, his self-control and determination made him a promising racer at the age of 18.
-     MMW saw his potential and signed him to their team when he qualified 3rd in the German Open Championship.
-     Since moving to MMW, he has won numerous races at the height of his career.
-     His driving style is very stable due to his tremendous experience and strong mental concentration.
-     But some say his desire to win has been weakened.
-     < Behind Story >
-     His father, a mechanic for Keiberg, was a wannabe racer, but after an accident during a car test, his dream ended.
-     He wanted Marco to fulfill his dream, so he invested everything in his son, Marco, even gaining the support of Keiberg Corp.
-     So when Marco moved to MMW without winning the Gold Cup for Keiberg, his father became full of anguish."
-driver3.desc
-    "‘The rally rebel road challenger.’
-     ESPN gave him that title which was front page news when he abruptly announced his retirement from his dominant reign at rally racing to focus on road racing.
-     Apart from a year when he recovered from an horrendous accident, he dominated every competition since he started his career in rally racing at the age of 22.
-     He currently is the 3-time, all-around winner of the WRC Rally and has won more than 50 various rallies such as the Rallye Monte Carlo and Dakar Rally.
-     During interviews, he sometimes references that the race is only about competing against his car and that the other drivers aren’t even a factor at all, stirring the public.
-     Outside of racing, his dysfunctional private life is full of scandals with famous celebrities, which makes him an easy target for the paparazzi.
-     One time when he decided to ditch the paparazzi, he drove so fast that no one could keep up with him.
-     This choice eventually ended up with Roman authorities revoking his driving license during his vacation.
-     When he decided to \"
-        challenge the road
-\" he claimed that rally racing no longer had any challenge left, which baffled the public with his drastic decision.
- His situational awareness, swift reaction speed, and unorthodox driving style are his strongest skills, but it is still uncertain if his skills will transition well on the circuit.
- <Behind Story>
- There were a number of rumors that related to the reason why he left rally racing and moved to F1.
- Some thought that there were no more challenges left in rally racing for him, but others thought he was just agitated by all the rumors that he was only good at off-road racing.
- According to his co-driver and former partner for 3 years, Andrew, he met a woman named Anna during his vacation in Italy. When Martin became attracted to her, she told Martin that she would only date him if he could prove himself faster than her on the circuit. Martin responded to the claim that it was a stupid made up lie by Andrew, who was now jobless thanks to Martin. He also told the press that, \"
-    Andrew will never perform at that level again without me on his rally again.\""
+driver1.desc "He just start racing. However he has good skil."
+driver2.desc "His father was engineer of NMW."
+driver3.desc "He was a champion of rally"
 # garage/option ##
 cmd_apply Apply
 cmd_advanced Advanced...
 str_game_options "Game Options"
 str_language Language
-str_game_mode Game
-str_normal_game "Normal Game"
-str_exercise_game "Exercise Game"
+str_host_port "Host Port"
 str_show_direction "Display sign"
 str_car_collision Collision
 str_car_collision_on On
@@ -840,9 +745,6 @@ str_steer_exp "Steering Exponent"
 str_steer_rate_control_method "Rate Control Method"
 str_steer_smooth1 "Smoothing Factor 1"
 str_steer_smooth2 "Smoothing Factor 2"
-str_channel_range "Channel Range"
-str_range_unlimited "Wide Range"
-str_range_normal "Normal Range"
 # reward ##
 str_reward_money "%d MA"
 str_reward_license %s
@@ -926,12 +828,10 @@ control_ffb_common Common
 control_keyboard_nf "Keyboard not found"
 control_joystick_nf "Joystick not found"
 control_wheel_nf "Wheel not found"
-control_gamepad_nf "Gamepad not found"
 control_mouse_nf "Mouse not found"
 control_none_nf None
 control_bumpy Bumpy
 control_collision Collision
-control_enginevibr "Engine vibration"
 control_aligning Aligning
 control_friction Friction
 control_cycleGhostCar "Cycle Ghost Car"
@@ -1079,7 +979,6 @@ carclass_bonus "Car Class Bonus"
 numlaps_bonus "Lap Bonus"
 team_bonus "Team Bonus"
 driver_bonus "Driver Bonus"
-drift_bonus "Drift Bonus"
 total_prize "Total Prize"
 jump_reward "Jump Reward"
 # replay ##
@@ -1147,7 +1046,6 @@ english English
 Korea Korea
 Germany Germany
 USA USA
-Japan Japan
 # Misc ##
 light_day Day
 light_night Night
@@ -1175,8 +1073,6 @@ spec Spec
 cart Cart
 buy Buy
 reset Reset
-car_spec_initial "Brand New"
-car_spec_tuned Tuned
 my_car "My Car"
 new_car "New Car"
 unknown_car Unknown
@@ -1207,8 +1103,8 @@ car.Blizzard Blizzard
 car.Meteor "Meteor S"
 car.Musai Musai
 car.S24 s24
-car.Am4 "Am-4"
-car.Am4_Chrome "Am-4 Platinum Edition"
+car.Am4 "Am 4"
+car.Am4_Chrome "Am 4 Platinum Edition"
 car.FE200R_GT_U "Fe 200r GT(1972 E Winner)"
 car.C30 C30
 car.RC30 RC30
@@ -1233,7 +1129,7 @@ car.Gull Geronimo
 car.M-540_Hornet Hornet
 car.M-545_wasp Wasp
 car.Goat "Goat G2"
-car.Spiral "Spiral V8"
+car.Spiral "Spiral v8"
 car.Zenith_Xmas "Millennium (X-mas Edition)"
 car.GZ30 "Kraus GZ30"
 car.P3roadster_Chrome "Kronos SE"
@@ -1271,8 +1167,6 @@ car.Super_R2 "Super R2"
 car.GT_550LM "GT 550LM C.I. DACHS"
 car.SLM_TIR "SLM TIR-Fantasia"
 car.SLM_gekko "SLM GEKKO-D.G."
-car.F_prototype "Fx07b Digital Gem"
-car.F_prototypeB "GP7/7 Cool Lava"
 car.Sample "Mod. Sample"
 car.GT40 "GT40 mk-I (Type-A)"
 car.GT40_2 "GT40 mk-I (Type-B)"
@@ -1281,44 +1175,44 @@ car.GT40_3 "GT40 mk-I (Type-C)"
 course.Circuit01 "XL Speedway"
 course.Circuit02 "Windy Pharos"
 course.Circuit03 "Sling Streets"
-course.Circuit04 "Rosel Raceway"
-course.Circuit05 "Sling Streets - Repairing"
-course.Circuit06 "Rosel Raceway (R)"
-course.Circuit07 "Sunset Harbor"
-course.Circuit08 "Sunset Harbor (R)"
-course.Circuit09 "Windy Pharos (R)"
+course.Circuit04 "Cloudy Summit"
+course.Circuit05 "Sling Streets Under Repairing"
+course.Circuit06 "Cloudy Summit-R"
+course.Circuit07 "Sundown Harbor"
+course.Circuit08 "Sundown Harbor-R"
+course.Circuit09 "Windy Pharos-R"
 course.Circuit10 "XL Speedway (Jump)"
-course.Circuit11 "Riverside way"
-course.Circuit11R "Riverside way (R)"
-course.Circuit12 "Onnuri - Maru"
-course.Circuit12B "Onnuri - Garam"
-course.Circuit12BR "Onnuri - Garam (R)"
-course.Circuit12C "Onnuri - Ara"
-course.Circuit12CR "Onnuri - Ara (R)"
-course.Circuit12D "Onnuri - Duru"
-course.Circuit12DR "Onnuri - Duru (R)"
-course.Circuit12E "Onnuri - Gaon"
-course.Circuit12ER "Onnuri - Gaon (R)"
-course.Circuit12F "Onnuri - Gurum"
-course.Circuit12FR "Onnuri - Gurum (R)"
-course.Circuit12G "Onnuri - Narae"
-course.Circuit12GR "Onnuri - Narae (R)"
-course.Circuit12H "Onnuri - Baram"
-course.Circuit13A "DnD Circuit A"
-course.Circuit13AR "DnD Circuit A (R)"
-course.Circuit13B "DnD Circuit B"
-course.Circuit13BR "DnD Circuit B (R)"
-course.Test02 "Engine Test Track"
+course.Circuit11 Circuit11
+course.Circuit11R Circuit11R
+course.Circuit12 Circuit12A
+course.Circuit12B Circuit12B
+course.Circuit12BR Circuit12BR
+course.Circuit12C Circuit12C
+course.Circuit12CR Circuit12CR
+course.Circuit12D Circuit12D
+course.Circuit12DR Circuit12DR
+course.Circuit12E Circuit12E
+course.Circuit12ER Circuit12ER
+course.Circuit12F Circuit12F
+course.Circuit12FR Circuit12FR
+course.Circuit12G Circuit12G
+course.Circuit12GR Circuit12GR
+course.Circuit12H Circuit12H
+course.Circuit13A Circuit13A
+course.Circuit13AR Circuit13AR
+course.Circuit13B Circuit13B
+course.Circuit13BR Circuit13BR
+course.Test02 "engine test"
 course.Random Random
 course.RandomDual "Dual Mode Random"
 course.DS Tutorial
 # Description of courses ##
 course.Circuit01.desc
-    "The track was originally used to test cars, and was later redesigned for racing. It consists of two straight sections and corners, so there is not much opportunity to save time. A lot of concentration is required in the beginning, because the first corner affects the whole lap."
+    "The track was originally used for test cars and later redesigned for racing. The two straight lines, each followed by corner give the driver the opportunity to shorten lap time. The first corner appearing right after start affects whole racing so you need high concentration in starting."
 course.Circuit02.desc
-    "This is a course that uses a long stretch of mountain road, with a beautiful seaport, as a track during events. Popular with spectators for its picturesque views, but there are many sharp corners and narrow sections. It's a notorious track for racers with its narrow and tough valley roads."
+    "The valley track winding with beautiful seaport is mended at times when the racing is held.It is much popular to galleries for outstanding views but it is also notorious to racers for narrow and tough valley track."
 course.Circuit03.desc
-    "A powerful sense of speed, crossing the city through the streets. Though the difficulty is medium, be careful braking at the hairpin, after the long straight section. Long, fast straightaways make the track very popular with spectators who want to see the cars at top speed."
+    "You can feel the best speed along the road through the city streets. Though the difficulty level is medium, you should be careful of braking at the hairpin after long straight line. Long acceleration through continous straight lines makes the track very populur to galleries wishing to see best speed of the car."
 course.Circuit04.desc
     "The track is very beautiful at glance from the middle of the mountain. At first, you can be mistaken that the track is easy except two hairpins, but because almost all the corners are blind corners meaning the next corner is not visible, the track has notorious nickname of Typhlopidae from the drivers."
 course.Circuit05.desc
@@ -1328,66 +1222,27 @@ course.Circuit07.desc "Sundown Harbor is a great shipyard"
 course.Circuit08.desc "Sundown Harbor-R is a great shipyard"
 course.Circuit09.desc
     "The valley track winding with beautiful seaport is mended at times when the racing is held.It is much popular to galleries for outstanding views but it is also notorious to racers for narrow and tough valley track."
-course.Circuit10.desc "XL Speedway was changed to jumping course."
-course.Circuit11.desc "A course designed to race along a beautiful river that runs through downtown."
-course.Circuit11R.desc "A course designed to race along a beautiful river that runs through downtown."
-course.Circuit12.desc
-    "A massive, newly built combined circuit to promote motorsports in Korea. A variety of circuits that can be easily organized using a variety of components has given it the name, 'OnNuRi,' meaning the whole world. The test track at the edge of it is called, 'Onnuri-Maru,' meaning sky."
-course.Circuit12B.desc
-    "Composed of several mid-to-low speed combined tracks. While its overall distance is short with sharp corners is used mainly for low-speed vehicles or cart racing. The curves resemble the river giving it the nickname, "
-        Onnuri-Garam.""
-course.Circuit12BR.desc
-    "Composed of several mid-to-low speed combined tracks. While its overall distance is short with sharp corners is used mainly for low-speed vehicles or cart racing. The curves resemble the river giving it the nickname, "
-        Onnuri-Garam.""
-course.Circuit12C.desc
-    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Onnuri-Ara' which means a sea connected to the river."
-course.Circuit12CR.desc
-    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Onnuri-Ara' which means a sea connected to the river."
-course.Circuit12D.desc
-    "A track made by connecting the corners at the end of the straight drag racing section.
-     The most important part of this track is how to enter and handle the row of corners after the straightaway section ends."
-course.Circuit12DR.desc
-    "A track made by connecting the corners at the end of the straight drag racing section.
-     The most important part of this track is how to enter and handle the row of corners after the straightaway section ends."
-course.Circuit12E.desc
-    "The long straightaway section is connected by a square area that guarantees enough room for reaching maximum speed.
-     It also has a variety of corners, which gives the course itself a longer length causing most racers to use higher tier vehicles for the race."
-course.Circuit12ER.desc
-    "The long straightaway section is connected by a square area that guarantees enough room for reaching maximum speed.
-     It also has a variety of corners, which gives the course itself a longer length causing most racers to use higher tier vehicles for the race."
-course.Circuit12F.desc
-    "It's a challenging course because of the many areas a racer needs to watch out for such as inconsistent road elevation, consecutive corners, and slopes.
-     The slightly tilted sections in the front of the various hairpin turns causes drivers to pass on the deceleration points, so careful technique is required."
-course.Circuit12FR.desc
-    "It's a challenging course because of the many areas a racer needs to watch out for such as inconsistent road elevation, consecutive corners, and slopes.
-     The slightly tilted sections in the front of the various hairpin turns causes drivers to pass on the deceleration points, so careful technique is required."
-course.Circuit12G.desc
-    "The overall appearance of the course resembles a wing giving it the name, ‘Circuit12G-Narae.’
-     This course has various hairpin turns, consecutive corners, and some straightaway sections."
-course.Circuit12GR.desc
-    "The overall appearance of the course resembles a wing giving it the name, ‘Circuit12G-Narae.’
-     This course has various hairpin turns, consecutive corners, and some straightaway sections."
-course.Circuit12H.desc
-    "A testing track that was an improvement from the Circuit12A-Maru track.
-     Some parts of the Onnuri-Maru track have additional straightaway sections, intended for testing the cornering performance in high-speed conditions at max speed."
-course.Circuit13A.desc
-    "Made famous by a well-known rally driver who participated in the drift competition held by a large machine shop.
-     The competition later became an annual event called, "
-        DnD." Despite becoming a global event
-it still uses a makeshift circuit Circuit13 made from a parking lot
-a tradition from its first race."
-course.Circuit13AR.desc
-    "Made famous by a well-known rally driver who participated in the drift competition held by a large machine shop.
-     The competition later became an annual event called, "
-        DnD." Despite becoming a global event
-it still uses a makeshift circuit Circuit13 made from a parking lot
-a tradition from its first race."
-course.Circuit13B.desc
-    "A higher tier course of the Circuit13-DnD that has been redesigned to mainly focus on vehicles with larger displacements, making it a popular choice for younger drivers.
-     It's also well known for its large number of world-class drift racers who participate as well."
-course.Circuit13BR.desc
-    "A higher tier course of the Circuit13-DnD that has been redesigned to mainly focus on vehicles with larger displacements, making it a popular choice for younger drivers.
-     It's also well known for its large number of world-class drift racers who participate as well."
+course.Circuit10.desc "XL Speedway was changed to jumpping course."
+course.Circuit11.desc "test track."
+course.Circuit11R.desc "test track."
+course.Circuit12.desc "test track."
+course.Circuit12B.desc "test track."
+course.Circuit12BR.desc "test track."
+course.Circuit12C.desc "test track."
+course.Circuit12CR.desc "test track."
+course.Circuit12D.desc "test track."
+course.Circuit12DR.desc "test track."
+course.Circuit12E.desc "test track."
+course.Circuit12ER.desc "test track."
+course.Circuit12F.desc "test track."
+course.Circuit12FR.desc "test track."
+course.Circuit12G.desc "test track."
+course.Circuit12GR.desc "test track."
+course.Circuit12H.desc "test track."
+course.Circuit13A.desc new-course.
+course.Circuit13AR.desc new-course.
+course.Circuit13B.desc new-course.
+course.Circuit13BR.desc new-course.
 course.Test02.desc Test
 course.Random.desc "An unknown racing adventure awaits!"
 course.RandomDual.desc "An unknown racing adventure awaits!"
@@ -1409,11 +1264,7 @@ quest_finish_desc
     "Followings are given as reward.
      To see, go to garage scene."
 # Description of cars, fill out these some day. ^^ ##
-car.griffone.desc
-    "It was the greatest hit of the most well-known automobile company in Italy, Stradi Corp. Its relationship with Fermo Corp. is not just a mere competition but a battle between sworn enemies.
-     Most believe that this came from the owners own personal history between each other.
-     The rivalry of these two corporations had such a huge impact on the models and contributed to the growth of the Italian automobile industry.
-     Stradi Corp. invested the majority of their budget into R&D to prove their technological superiority, which lead to their success development of the Griffone and struck a blow to Fermo Corp."
+car.griffone.desc Griffone
 car.R-450GT_street.desc "R-450GT Street"
 car.GT_550LM.desc "GT 550LM XIX Hastings"
 car.R-450GT_Channel_6-Shuken.desc "R-450GT Channel6 - Shuken"
@@ -1464,8 +1315,6 @@ car.P3roadster_Chrome.desc "Kronos Special Edition"
 car.RC30_stripe.desc "RC30 Special Edition"
 car.Terra_2tone.desc "Terra Season Project Edition"
 # License ##
-license_tutorial "면허 없음"
-license_none "L1 증서"
 license_beginner Beginner
 license_amateur Amateur
 license_professional Professional
@@ -1604,7 +1453,7 @@ channel_L5_class "L5 grade, super cars"
 channel_F_class "F grade, endless race"
 channel_FF "Let's race FFs."
 channel_FR "Let's race FRs."
-channel_MR "Let's race MRs."
+channel_MR "Let's race MR5."
 channel_4WD "Let's race 4WDs."
 channel_na "Let's fight only with racing skill."
 channel_turbo "Powerful turbos"
@@ -1643,8 +1492,10 @@ unit_length "Length (mm)"
 unit_width "Width (mm)"
 unit_height "Height (mm)"
 unit_maxOutput "Max Output (PS)"
-unit_maxSpeed "Max Speed"
-unit_max100 "0-100"
+unit_maxSpeed
+"Max Speed"
+unit_max100
+0-100
 unit_maxTorque "Max Torque (Nm/rpm)"
 unit_weight "Weight (kg)"
 unit_wheelbase "Wheelbase (mm)"
@@ -1708,20 +1559,14 @@ part_rim Rim
 part_disc Disc
 part_caliper Caliper
 part_engine Engine
-part_engine_desc
-    "Tune the engine, the heart of any vehicle’s performance.
-     When tuning the power systems including the engine, you must tune all the other parts aside from the power-related systems to ensure normal performance.
-     For example, if you increase the power, you should also tune the grip, weight, or downforce."
+part_engine_desc "Description of engine"
 part_engine_level1 "NA Engine level1"
 part_engine_level2 "NA Engine level2"
 part_engine_level3 "NA Engine level3"
 part_clutch Clutch
-part_clutch_desc
-    "A device that transmits the power to the power shaft. Higher grade products are lighter and have better resistance, reducing the power loss and allowing for a quicker transmission."
+part_clutch_desc "Clutch desc"
 part_transmission Transmission
-part_transmission_desc
-    "A device which transmits the engine power to the drive shaft. It allows for a variety of power and speed by converting the limited amount of power through the gear ratio.
-     In general, better quality means lighter, shorter transmission times and stronger power. It can be roughly be divided into units concentrating on acceleration or higher maximum speeds."
+part_transmission_desc "Transmission desc"
 part_transmission_sports "Sports Type"
 part_transmission_semi "Semi Racing"
 part_transmission_racing Racing
@@ -1737,65 +1582,35 @@ part_semiSpeed "Semi-racing (High Speed)"
 part_racingSpeed "Racing (High Speed)"
 part_differential Differential
 part_muffler Muffler
-part_muffler_desc
-    "Mount a tip on the exterior of the muffler.
-     Decorate your muffler as you like it."
+part_muffler_desc "Muffler desc"
 part_suspension Suspension
-part_suspension_desc
-    "A device originally designed to reduce the shock or vibration from the ground. Some variants are used for sports cars that focus on dynamic handling.
-     It affects the overall handling of the vehicle such as steering, braking, and acceleration. In general, the softer the part is, the less dynamic it will be."
+part_suspension_desc "Suspension desc"
 part_antiRollBar "Anti-roll Bar"
-part_antiRollBar_desc
-    "When cornering, the inertial force twists the chassis, which may result in movements not intended by the driver.
-     This part will hold both sides of the chassis to prevent rolling (twisting) of the car, which helps stabilize the car.
-     It’s the most simple and basic tuning of a car."
+part_antiRollBar_desc "Anti-roll Bar desc"
 part_apronBack "Rear Apron"
-part_apronBack_desc
-    "Formerly used to absorb the shock from the rear, is now mainly used for airflow.
-     It was developed to assist the air to easily flow throughout the car's body, especially in the case of race cars."
+part_apronBack_desc "Rear Apron desc"
 part_apronFront "Front Apron"
-part_apronFront_desc
-    "Formerly used to absorb the shock from the front, is now mainly used for airflow.
-     In the case of race cars, it does one of two things, creates a wind tunnel to send air from the front of the rear or blocks air from getting below the car that creates a vortex below the car."
+part_apronFront_desc "Front Apron desc"
 part_bonnet Bonnet
-part_bonnet_desc "Also called the hood, this reduces the number of foreign objects that can enter the engine or air drag."
+part_bonnet_desc "Bonnet desc"
 part_headlight "Head Lamp"
-part_headlight_desc
-    "Mounted for night driving. One of the defining features of the design of a car, there are variable shapes and color options even for basic models."
+part_headlight_desc "Head Lamp desc"
 part_hardener Reinforcing
-part_hardener_desc
-    "Install the roll cage to supplement the stiffness of the body.
-     Increasing the stiffness reduces damage from collisions.
-     Unfortunately, it will increase weight."
+part_hardener_desc "Reinforcing desc"
 part_taillight "Tail Lamp"
-part_taillight_desc
-    "Unlike the front lamp, the rear lamp is an important safety device that is frequently used for communicating with other drivers.
-     The rear lamp is composed of lamps with various colors which work independently for brake, direction, emergency and moving backward."
+part_taillight_desc "Tail Lamp desc"
 part_mirror Mirror
-part_mirror_desc
-    "This device is called a side mirror which is attached to the left and right side of a car to allow the driver to see the rear of the vehicle to help prevent accidents."
+part_mirror_desc "Mirror desc"
 part_skirt Skirt
-part_skirt_desc
-    "Recently, most mass-produced cars are also designed to allow for replacement parts.
-     Like the front and rear air dam, it contributes to the air flow."
+part_skirt_desc "Skirt desc"
 part_wing Wing
-part_wing_desc
-    "When a vehicle is moving at high speeds, the front will sometimes tilt towards the ground, and the rear will have a weaker traction on the ground.
-     A wing is based on the concept of using an upside down aircraft wing, using aerodynamics to apply downforce to the rear, increasing traction.
-     The force pushing the vehicle towards the ground is called downforce."
+part_wing_desc "Wing desc"
 part_wiper Wiper
-part_wiper_desc
-    "Installed in front of the driver and front passenger seat window, they remove rain, snow or any other foreign objects from the glass window to secure visibility.
-     In racing, some cars only have a single wiper either on the driver’s side or in the center to reduce air resistance and weight."
+part_wiper_desc "Wiper desc"
 part_paint Paint
-part_paint_desc
-    "It's the most important element for the image of any car.
-     In XL1, a variety of unique colors were assigned for each car when they were produced."
+part_paint_desc "Paint desc"
 part_charger Charger
-part_charger_desc
-    "Excessive injection of air into the engine will increase compression and power stroke, raising the performance.
-     The supercharger uses the power shaft, removing turbocharger lag but the torque increase is lower than a turbocharger.
-     The turbocharger uses the exhaust gas pressure, so while it still has turbocharger lag until it reaches a certain pressure, its torque increase is much higher."
+part_charger_desc "Charger desc"
 part_charger_super1 "Supercharger 1"
 part_charger_super2 "Supercharger 2"
 part_charger_super3 "Supercharger 3"
@@ -1803,35 +1618,27 @@ part_charger_turbo1 "Turbo kit level1"
 part_charger_turbo2 "Turbo kit level2"
 part_charger_turbo3 "Turbo kit level3"
 part_intake "Air Filter"
-part_intake_desc
-    "It filters air to prevent any foreign substances from entering inside the engine. As air moves through the filter, it reduces the amount of air input to the engine, so higher quality filters are better designed to both ease the air flow and better filter any foreign substances."
+part_intake_desc "Air Filter desc"
 part_cooling Cooler
 part_cooling_desc "Cooler desc"
 part_balancing Balancing
-part_balancing_desc
-    "The engine is not made of a single part but is a combined system of components. This means tuning the various parts to work as one. It's the basics of race car tuning and will help improve the overall engine power."
+part_balancing_desc "Balancing desc"
 part_flywheel Flywheel
-part_flywheel_desc "Use light and more resistant parts to reduce power loss."
+part_flywheel_desc "Flywheel desc"
 part_polishing Polishing
-part_polishing_desc
-    "Smooth the route of the fuel within the engine and tune the inner walls to improve better fuel flow and piston movement, to increase engine power."
+part_polishing_desc "Polishing desc"
 part_driveshaft driveshaft
-part_driveshaft_desc "Use lighter weight parts to minimize power loss. Front wheel drive cars cannot use this part for tuning."
+part_driveshaft_desc "driveshaft desc"
 part_downSpring "Height from Surface"
-part_downSpring_desc
-    "Adjust the ground clearance to improve the mobility of the vehicle. Lowering clearance will lower the center of gravity, which increases traction when cornering and shortens the reaction time of the vehicle."
+part_downSpring_desc "Height from Surface desc"
 part_exhaust Exhaust
-part_exhaust_desc "Improve the flow of the gas exhaust from the engine, slightly increasing power output."
+part_exhaust_desc "Exhaust desc"
 part_intercooler Intercooler
-part_intercooler_desc
-    "A part only usable on a turbocharger. Turbochargers activate the turbine using the hot gas exhaust pressure causing the overcharged air flowing into the turbine to be hot as well. This cools the turbine inlet which helps air flow and increases power output."
+part_intercooler_desc "Intercooler desc"
 part_brake Brake
-part_brake_desc
-    "The most basic safety part used for stopping a car. It is also one of the most important elements of tuning as well. Cars with only high power are like airplanes that never land. Higher grades provide stronger braking power."
+part_brake_desc "Brake desc"
 part_weightReduce "Weight Reduction"
-part_weightReduce_desc
-    "The removal of nonessential racing parts such as support devices, makes the vehicle lighter.
-     Making the vehicle lighter will reduce stiffness."
+part_weightReduce_desc "Weight Reduction desc"
 part_maker_machtech Machtech
 part_maker_racingfury Racingfury
 part_maker_kiwistreets "Kiwi Streets"
@@ -1854,7 +1661,7 @@ part_maker_spike Spike
 part_maker_fms FMS
 part_maker_kraus Kraus
 part_horn Horn
-part_horn_desc "It's one of the communication methods of a car. While this has no effect on performance, no car leaves home without it."
+part_horn_desc "Horn desc"
 part_horn01 Horn1
 part_horn02 Horn2
 part_horn03 Horn3
@@ -1864,39 +1671,18 @@ part_horn06 Horn6
 part_licensePlate "License Plate"
 part_licensePlateA00 "Basic Plate"
 part_dashboard Dashboard
-part_dashboard_desc
-    "A part that displays the car’s status to the driver. It displays RPM, speed, current gear configuration, and the computer control’s status."
+part_dashboard_desc "Dashboard desc"
 dashboard01 "Style A"
 dashboard02 "Style B"
 part_roomMirror "Rooom Mirror"
-part_roomMirror_desc
-    "This part is called a room mirror, attached to provide the driver with sight on the rear just like a side mirror. Since its only function is to provide sight, the size or design differs from car to car."
+part_roomMirror_desc "Rooom Mirror desc"
 roomMirror01 "Rounded trapezoid mirror"
 roomMirror02 "Small opal mirror"
 part_decal Decal
 part_inchUp Inch-Up
-part_inchUp_desc
-    "Change the size of the wheel to larger or smaller sizes.
-     
-     Larger wheels have better grip.
-     Sometimes smaller wheels are preferred for easier drifting."
 part_hangingToy Accessory
-part_hangingToy_desc
-    "Attach a cute mascot to your car.
-     
-     It will help calm nerves during the race."
-part_rim_desc
-    "Also called a wheel in some countries, it's important to the design of a car.
-     
-     Choose a wheel that fits your style."
-part_decal_desc
-    "Create your own style by attaching stickers to your car.
-     
-     But too many of them will make it worse.
-     But too many stickers can be problematic. Some cars don’t allow for stickers, so just remember that once you place a sticker, you can’t move it."
 part_booster "Nitro Booster"
-part_booster_desc
-    "A device designed to supply a separate mixture of gas called nitro to the engine to swiftly create power. It's contained in a separate canister that resembles an oxygen tank where the driver can manually use it at just the right moment."
+part_booster_desc "Nitro Booster desc"
 nitro1_desc "902 Garage (+40% ps x 10)"
 nitro2_desc "nGage (+55% ps x 10)"
 nitro3_desc "Speed Age (+75% ps x 10)"
@@ -1954,7 +1740,7 @@ part_engine_Gull Geronimo
 part_engine_M-540_Hornet Hornet
 part_engine_M-545_wasp Wasp
 part_engine_Goat "Goat G2"
-part_engine_Spiral "Spiral V8"
+part_engine_Spiral "Spiral v8"
 part_engine_Zenith_Xmas "Millennium (X-mas Edition)"
 part_engine_GZ30 GZ30
 part_engine_P3roadster_Chrome "Kronos SE"
@@ -2012,12 +1798,10 @@ tire1_desc "Soft (Grip+, Duration+) 20 Ea"
 tire2_desc "Super Soft (Grip++, Duration-) 20 Ea"
 tire3_desc "Endurance (Grip, Duration++) 20 Ea"
 tire4_desc "Super Endurance (Grip-, Duration+++) 20 Ea"
-tire5_desc "GEKKO (Grip--, Duration+++) 10 Ea"
 tire1_desc_short Soft
 tire2_desc_short Super
 tire3_desc_short Endurance
 tire4_desc_short "Super Endurance"
-tire5_desc_short "GEKKO (Endurance+++)"
 # premium gas ##
 gas1_desc "Good (torque+, distance-) 20 bottles"
 gas2_desc "Premium (torque++, distance--) 20 bottles"
@@ -2055,7 +1839,6 @@ cmd_start Start
 cmd_preview Preview
 str_ghost_car "Ghost Car"
 str_player Player
-str_myghost "My Ghost"
 str_demo Demo
 str_trophy_gold Gold
 str_trophy_silver Silver
@@ -2997,17 +2780,9 @@ str_steer_sensitivity_low dull
 str_steer_sensitivity_med regular
 str_steer_sensitivity_high high
 str_steer_sensitivity_max max
-str_trouble "There was a problem during maintenance!!!"
-str_return_car ⇒
 str_off Off
 str_weak Weak
 str_strong Strong
-str_emergencyRefuel "Do you want to make an emergency replacement (10%) of fuel?"
-str_refuel Accept
-rewards_title Congratulations.
-rewards_message
-    "You received the following rewards.
-     If you received an item unlock as a reward, you will be able to purchase the car or part from the shop."
 str_fail_start_license "Failed to start license"
 str_required_condition Required
 str_current_condition Current

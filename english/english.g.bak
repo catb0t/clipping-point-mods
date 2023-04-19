@@ -47,9 +47,8 @@ garage_rank_menu "My Rank"
 race_normal_menu "Normal Race"
 race_time_attack_menu "Time Attack"
 race_event_menu "Custom Race"
+race_quick_race_menu "Quick Race"
 race_championship_menu "Mission Race"
-race_quick_menu "Quick Race"
-mission_race "Mission Race"
 quick_race "Quick Race"
 time_attack "Time Attack"
 license_beginner_menu Beginner
@@ -66,13 +65,14 @@ opt_video_menu Video
 opt_audio_menu Audio
 opt_control_menu Control
 opt_macro_menu Macro
-opt_hotkey Hotkey
 opt_steer_rate "Steer Rate"
+opt_hotkey Hotkey
 # menu descriptions ##
 desc_exit_menu Exit
 desc_garage_menu "Go to Garage Menu"
 desc_race_menu "Go to Race Menu"
-desc_license_menu "Go to License Menu"
+desc_license_menu
+    "Go to License Menu"
 desc_shop_menu "Go to Shop Menu"
 desc_options_menu "Go to Option Menu"
 desc_replay_menu "View Replay"
@@ -86,16 +86,16 @@ desc_garage_item_menu "Select items"
 desc_garage_quest_menu "Select quests"
 desc_garage_rank_menu "View Rank"
 desc_race_normal_menu "Normal Race"
-desc_race_amateur_menu "Amateur Race"
-desc_race_pro_menu "Professional Race"
-desc_race_champ_menu "Champ Race"
-desc_race_endurance_menu "Endurance Race"
 desc_race_time_attack_menu "Time Attack Race"
 desc_race_event_menu "Custom Race"
-desc_license_beginner_menu "Beginner license"
-desc_license_amateur_menu "Amateur license"
-desc_license_pro_menu "Professional license"
-desc_license_champ_menu "Champion license"
+desc_license_beginner_menu
+    "Beginner license"
+desc_license_amateur_menu
+    "Amateur license"
+desc_license_pro_menu
+    "Professional license"
+desc_license_champ_menu
+    "Champion license"
 desc_shop_car_menu "Car Shop"
 desc_shop_tuning_menu "Tuning Shop"
 desc_shop_staff_menu "Staff Shop"
@@ -116,17 +116,19 @@ str_help Help
 str_nocar "No Car"
 str_basic_car "Basic Car"
 str_owned_car "Owned Car"
-str_must_select_car "Select car"
+str_must_select_car "You must select a car."
 str_garage_chat_win_title Chatting
-str_welcome Welcome!
-str_finish_tutorial "Finish tutorial first."
-str_racequeen_exceeded "Too many race quuens for your current garage."
+str_welcome "Welcome to Clipping Point!!!"
+str_finish_tutorial "You can get a car by completing the tutorial in the driving school."
+str_racequeen_exceeded 
+    "The number of race queens we are hiring is too many for our current garage.
+     You can expand your garage in the garage menu."
 str_ask_logout Logout?
 str_waiting_server "Still waiting for response from server..."
 str_level_points "Level %d / %d Points"
 str_expiration "Remaining: %d days"
 str_expiration_unlimited Wide
-str_fatal_car_error "Fatal car error!"
+str_fatal_car_error "Fatal car data error!"
 str_unknown_slash_cmd "Unknown command: %s"
 # community window ##
 str_community Community
@@ -144,7 +146,6 @@ cmd_search_club_reset "Reset Club"
 str_show_online_only "Show online only"
 str_unregister "Remove on list"
 str_promote Promote
-str_myghost "My ghost"
 str_demote Demote
 str_quit_club "Quit club"
 str_unmute Unmute
@@ -300,10 +301,10 @@ str_quest_reward "● Reward"
 str_quest_done Done
 str_quest_new New
 str_quest_get_reward Get
-str_quest_reward_money "Reward money:"
-str_quest_reward_no_option "Additional reward."
-str_quest_reward_option "Select your reward."
-str_reward_car_not_match "Car does not match."
+str_quest_reward_money "● Reward money:"
+str_quest_reward_no_option "● Additional reward."
+str_quest_reward_option "● Select your reward."
+str_reward_car_not_match "To recieve the reward, you must use the same car that completed the quest."
 # garage/rank ##
 str_waiting_for_ranks "Waiting for ranks..."
 str_rank %dth
@@ -357,8 +358,8 @@ str_individual Individual
 str_team Team
 str_num_players Players
 str_num_teams Teams
-str_limit "Join Condition"
 str_entance_limit "Admission Restricton (Driving School)"
+str_limit "Join Condition"
 str_entance_begin From
 str_entance_end To
 str_private Private
@@ -440,7 +441,7 @@ str_difficulty5 "Very Hard"
 str_ch_difficulty0 Easy
 str_ch_difficulty1 Medium
 str_ch_difficulty2 Hard
-str_ch_difficulty2 all
+str_ch_difficulty3 all
 str_join_lobby_msg "Joined to %s"
 str_on_join "on join..."
 str_cannot_find_game "cannot find the game."
@@ -500,14 +501,20 @@ str_result_total Result
 str_insufficient_funds "Insufficient Funds"
 str_need_money_fmt "Insufficient %d gold"
 str_need_cash_fmt "Insufficient %d cash"
-str_insufficient_garage_slot "Insufficient Garage"
-str_over_garageslot "over garage slot"
-str_cannot_buy_more_slot "Cannot buy more slot."
+str_insufficient_garage_slot "You need to expand your garage."
+str_over_garageslot
+    "Some vehicles cannot be used because they exceed the limit of the current garage.
+     Please sell your vehicle or expand your garage."
+str_cannot_buy_more_slot "Cannot buy more slots."
 str_confirm_buy_car "Are you sure you want to buy this car?"
-str_choose "Choose color."
+str_choose "Please select the color of your vehicle."
 str_confirm_buy_part "Are you sure you want to buy this part?"
-str_con_purchase "Congratulations on your purchase!"
-str_con_purchase_slot_fmt "Now, your garage can manage %d cars!"
+str_con_purchase 
+    "Congratulations on your purchase!
+     Purchased vehicles or parts can be managed in the garage."
+str_con_purchase_slot_fmt 
+    "Congratulations! 
+     Now, your garage can manage %d cars!"
 str_default_part ""
 car_repair_charge "Repair car"
 str_repair_car "This is coast. Do you want?"
@@ -531,12 +538,12 @@ str_select_after_hiring "Select after hiring(only for driver)"
 str_part_equipped "Purchased parts are equipped."
 str_staff_selected "Hired staff is selected."
 str_select_driver "Change driver"
-str_carclass_changed "A Car class'll is changed."
-str_staff_shop "'CP' Agency"
-str_staff_shop_desc1 "You can hire your driver, engineer "
-str_staff_shop_desc2 " and pit-babe "
+str_carclass_changed "The class of the car was changed by detaching/attaching parts."
+str_staff_shop "'Clipping Point' Agency"
+str_staff_shop_desc1 "You can hire drivers, engineers"
+str_staff_shop_desc2 " and race queens "
 str_staff_shop_desc3 "You have to give salary to them."
-str_staff_shop_desc4 "If you don't give salry to them, "
+str_staff_shop_desc4 "If you don't give salary to them, "
 str_staff_shop_desc5 "they will leave you."
 str_hire_success "Congratulations! Hired staffs."
 str_hire_failure "Hire fail"
@@ -545,9 +552,9 @@ str_staff_management "Staff management"
 str_no_such_staff "no staff."
 str_hire_staffs Staffs
 str_renew_period "Renew Period"
-str_hire_restriction "After driver and racing queen, can not refund them in the period."
-str_hire_restriction1 "After driver and racing queen,"
-str_hire_restriction2 "can not refund them in the period."
+str_hire_restriction "Drivers, race queens and engineers are non-refundable after hire."
+str_hire_restriction1 "After hiring driver, race queens, and engineers"
+str_hire_restriction2 "No refunds."
 str_hire_period_format " will be hired during %d days."
 str_change_drivername "Driver Name:"
 str_drivername "Driver Name:"
@@ -561,7 +568,9 @@ str_renew_failure "Failed to renew the period of employment."
 str_confirm_renewperiod "Are you sure you want to renew the period of employment?"
 str_period_of_employment Period
 str_fire_staff_desc "fire staff"
-str_expired_staff "The period of employment is expired"
+str_expired_staff 
+    "There are personnel whose employment period has ended.
+     Please check it in the management menu of the garage."
 str_confirm_attach_decal "Are you sure you want to attach the decal to car?"
 str_confirm_remove_decal "Are you sure you want to delete the decal?"
 str_warning_remove_decal "The existed decal'll be removed."
@@ -592,7 +601,7 @@ str_confirm_renew_staff "Do you really want to renew the staff?"
 str_confirm_renew_staff_fmt "Do you really want to renew the staff(%d days)?"
 str_staff_remaining "Remaing: %d-days"
 str_expired Expired!
-str_gift_failure "Failed to Gift"
+str_gift_failure "Failed to Gift. Please check the other person's name or garage space."
 str_gift_success "Succeeded to Gift."
 str_gift_car_subject "A Gift Car"
 str_gift_car_content "you received a car."
@@ -626,9 +635,9 @@ str_car_no_point "0 point"
 str_car_point_fmt "%d point"
 str_car_experience Experience
 str_car_experience_fmt %d/%d
-str_car_power Power
-str_car_accel accel
-str_car_grip grip
+str_car_power_trait Power
+str_car_accel_trait Acceleration
+str_car_grip_trait Grip
 str_reset Reset
 str_lifespan Mileage
 str_reset_success "reset success"
@@ -656,7 +665,7 @@ ai_name_anonn -----
 # ai_name_11           "Eric"
 ai_name_1 Kay
 ai_name_2 Mordred
-ai_name_3 "Gawain "
+ai_name_3 Gawain
 ai_name_4 Agravain
 ai_name_5 Galahad
 ai_name_6 Gareth
@@ -664,7 +673,7 @@ ai_name_7 Lancelot
 ai_name_8 Bors
 ai_name_9 Pellinor
 ai_name_10 Bedivere
-ai_name_11 "Percivale "
+ai_name_11 Percivale
 # staff name ##
 staff_name_rachelGirl Rachel
 staff_name_lauraGirl Laura
@@ -672,7 +681,7 @@ staff_name_michaelGirl Michael
 staff_name_girlMD "Lady MD"
 staff_name_rookieDriver "Rookie Driver"
 staff_name_markoschmitz "Marko Schmitz"
-staff_name_martinhope "Martin hope"
+staff_name_martinhope "Martin Hope"
 staff_name_ryanPitcrew Ryan
 staff_name_kanghyungju Kang
 # staff description ##
@@ -680,7 +689,7 @@ girl1.desc
     " She was chosen to be a racer girl while she was auditioning to be a supermodel.
      Her gorgeous eyes and slender build drew lots of fans.
      She’s been invited to every major motor show, solidifying her status.
-     People view her as the image of high-end vehicles and rumors show that she is transitioning to be an entertainer."
+     People view her as the image of high-end vehicles and rumors show that she is preparing to become a celebrity."
 girl2.desc
     " Born in 1982, she worked as a graphic artist in the past.
      After watching a car race with her boyfriend, she fell in love with car racing.
@@ -730,19 +739,20 @@ driver3.desc
      Outside of racing, his dysfunctional private life is full of scandals with famous celebrities, which makes him an easy target for the paparazzi.
      One time when he decided to ditch the paparazzi, he drove so fast that no one could keep up with him.
      This choice eventually ended up with Roman authorities revoking his driving license during his vacation.
-     When he decided to "
+     When he decided to \"
         challenge the road
-" he claimed that rally racing no longer had any challenge left, which baffled the public with his drastic decision.
+\" he claimed that rally racing no longer had any challenge left, which baffled the public with his drastic decision.
  His situational awareness, swift reaction speed, and unorthodox driving style are his strongest skills, but it is still uncertain if his skills will transition well on the circuit.
  <Behind Story>
  There were a number of rumors that related to the reason why he left rally racing and moved to F1.
  Some thought that there were no more challenges left in rally racing for him, but others thought he was just agitated by all the rumors that he was only good at off-road racing.
- According to his co-driver and former partner for 3 years, Andrew, he met a woman named Anna during his vacation in Italy. When Martin became attracted to her, she told Martin that she would only date him if he could prove himself faster than her on the circuit. Martin responded to the claim that it was a stupid made up lie by Andrew, who was now jobless thanks to Martin. He also told the press that, "
-    Andrew will never perform at that level again without me on his rally again.""
+ According to his co-driver and former partner for 3 years, Andrew, he met a woman named Anna during his vacation in Italy. When Martin became attracted to her, she told Martin that she would only date him if he could prove himself faster than her on the circuit. Martin responded to the claim that it was a stupid made up lie by Andrew, who was now jobless thanks to Martin. He also told the press that, \"
+    Andrew will never perform at that level again without me on his rally again.\""
 # garage/option ##
 cmd_apply Apply
 cmd_advanced Advanced...
 str_game_options "Game Options"
+str_language Language
 str_game_mode Game
 str_normal_game "Normal Game"
 str_exercise_game "Exercise Game"
@@ -1197,8 +1207,8 @@ car.Blizzard Blizzard
 car.Meteor "Meteor S"
 car.Musai Musai
 car.S24 s24
-car.Am4 "Am 4"
-car.Am4_Chrome "Am 4 Platinum Edition"
+car.Am4 "Am-4"
+car.Am4_Chrome "Am-4 Platinum Edition"
 car.FE200R_GT_U "Fe 200r GT(1972 E Winner)"
 car.C30 C30
 car.RC30 RC30
@@ -1261,6 +1271,8 @@ car.Super_R2 "Super R2"
 car.GT_550LM "GT 550LM C.I. DACHS"
 car.SLM_TIR "SLM TIR-Fantasia"
 car.SLM_gekko "SLM GEKKO-D.G."
+car.F_prototype "Fx07b Digital Gem"
+car.F_prototypeB "GP7/7 Cool Lava"
 car.Sample "Mod. Sample"
 car.GT40 "GT40 mk-I (Type-A)"
 car.GT40_2 "GT40 mk-I (Type-B)"
@@ -1269,9 +1281,9 @@ car.GT40_3 "GT40 mk-I (Type-C)"
 course.Circuit01 "XL Speedway"
 course.Circuit02 "Windy Pharos"
 course.Circuit03 "Sling Streets"
-course.Circuit04 "Roselle Raceway"
+course.Circuit04 "Rosel Raceway"
 course.Circuit05 "Sling Streets - Repairing"
-course.Circuit06 "Roselle Raceway (R)"
+course.Circuit06 "Rosel Raceway (R)"
 course.Circuit07 "Sunset Harbor"
 course.Circuit08 "Sunset Harbor (R)"
 course.Circuit09 "Windy Pharos (R)"
@@ -1302,11 +1314,11 @@ course.RandomDual "Dual Mode Random"
 course.DS Tutorial
 # Description of courses ##
 course.Circuit01.desc
-    "The track was originally used for test cars and later redesigned for racing. The two straight lines, each followed by corner give the driver the opportunity to shorten lap time. The first corner appearing right after start affects whole racing so you need high concentration in starting."
+    "The track was originally used to test cars, and was later redesigned for racing. It consists of two straight sections and corners, so there is not much opportunity to save time. A lot of concentration is required in the beginning, because the first corner affects the whole lap."
 course.Circuit02.desc
-    "The valley track winding with beautiful seaport is mended at times when the racing is held.It is much popular to galleries for outstanding views but it is also notorious to racers for narrow and tough valley track."
+    "This is a course that uses a long stretch of mountain road, with a beautiful seaport, as a track during events. Popular with spectators for its picturesque views, but there are many sharp corners and narrow sections. It's a notorious track for racers with its narrow roads and tough valley roads."
 course.Circuit03.desc
-    "You can feel the best speed along the road through the city streets. Though the difficulty level is medium, you should be careful of braking at the hairpin after long straight line. Long acceleration through continous straight lines makes the track very populur to galleries wishing to see best speed of the car."
+    "A powerful sense of speed, crossing the city through the streets. Though the difficulty is medium, be careful braking at the hairpin, after the long straight section. Long, fast straightaways make the track very popular with spectators who want to see the cars at top speed."
 course.Circuit04.desc
     "The track is very beautiful at glance from the middle of the mountain. At first, you can be mistaken that the track is easy except two hairpins, but because almost all the corners are blind corners meaning the next corner is not visible, the track has notorious nickname of Typhlopidae from the drivers."
 course.Circuit05.desc
@@ -1316,21 +1328,21 @@ course.Circuit07.desc "Sundown Harbor is a great shipyard"
 course.Circuit08.desc "Sundown Harbor-R is a great shipyard"
 course.Circuit09.desc
     "The valley track winding with beautiful seaport is mended at times when the racing is held.It is much popular to galleries for outstanding views but it is also notorious to racers for narrow and tough valley track."
-course.Circuit10.desc "XL Speedway was changed to jumpping course."
+course.Circuit10.desc "XL Speedway was changed to jumping course."
 course.Circuit11.desc "A course designed to race along a beautiful river that runs through downtown."
 course.Circuit11R.desc "A course designed to race along a beautiful river that runs through downtown."
 course.Circuit12.desc
-    "A massive, newly built combined circuit to promote motorsports in Korea. A variety of circuits that can be easily organized using a variety of components has given it the name, 'OnNuRi,' meaning the whole world. The test track at the edge of it is called, 'Circuit12A-Maru,' meaning sky."
+    "A massive, newly built combined circuit to promote motorsports in Korea. A variety of circuits that can be easily organized using a variety of components has given it the name, 'OnNuRi,' meaning the whole world. The test track at the edge of it is called, 'Onnuri-Maru,' meaning sky."
 course.Circuit12B.desc
     "Composed of several mid-to-low speed combined tracks. While its overall distance is short with sharp corners is used mainly for low-speed vehicles or cart racing. The curves resemble the river giving it the nickname, "
-        Circuit12B-Garam.""
+        Onnuri-Garam.""
 course.Circuit12BR.desc
     "Composed of several mid-to-low speed combined tracks. While its overall distance is short with sharp corners is used mainly for low-speed vehicles or cart racing. The curves resemble the river giving it the nickname, "
-        Circuit12B-Garam.""
+        Onnuri-Garam.""
 course.Circuit12C.desc
-    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Circuit12C-Ara' which means a sea connected to the river."
+    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Onnuri-Ara' which means a sea connected to the river."
 course.Circuit12CR.desc
-    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Circuit12C-Ara' which means a sea connected to the river."
+    "A track that extends the Circuit12B-Garam track that gives it a long, straightaway section. This track is suitable for high-speed vehicles for both the low-to-mid speed corners which allow for exhilarating and powerful driving on the track. It has been given the nickname, 'Onnuri-Ara' which means a sea connected to the river."
 course.Circuit12D.desc
     "A track made by connecting the corners at the end of the straight drag racing section.
      The most important part of this track is how to enter and handle the row of corners after the straightaway section ends."
@@ -1357,7 +1369,7 @@ course.Circuit12GR.desc
      This course has various hairpin turns, consecutive corners, and some straightaway sections."
 course.Circuit12H.desc
     "A testing track that was an improvement from the Circuit12A-Maru track.
-     Some parts of the Circuit12A-Maru track have additional straightaway sections, intended for testing the cornering performance in high-speed conditions at max speed."
+     Some parts of the Onnuri-Maru track have additional straightaway sections, intended for testing the cornering performance in high-speed conditions at max speed."
 course.Circuit13A.desc
     "Made famous by a well-known rally driver who participated in the drift competition held by a large machine shop.
      The competition later became an annual event called, "
@@ -1452,6 +1464,8 @@ car.P3roadster_Chrome.desc "Kronos Special Edition"
 car.RC30_stripe.desc "RC30 Special Edition"
 car.Terra_2tone.desc "Terra Season Project Edition"
 # License ##
+license_tutorial "면허 없음"
+license_none "L1 증서"
 license_beginner Beginner
 license_amateur Amateur
 license_professional Professional
@@ -2058,67 +2072,68 @@ license_max_collisions "Too many collisions, test failed."
 license_invalid_surface "Test failed."
 license_rewards Rewards
 license_reward_reason "Congratulations!  You have won the following rewards:"
-str_license_desc
-    "You will learn the basic controls and simple methods
-     for car operations.
-     When you complete all L2 lessons, L2 class vehicles will be
-     unlocked for purchase.
-     (Note, you don’t need a gold medal
-     to unlock the class of vehicles for purchase.)"
+str_license_desc "Description for license"
 # #################################################### tutorial license messeage ##
-ta01_name "Driving Lessons"
+ta01_name "기초적인 조작"
 ta01_desc
-    "Now we will learn about basic controls.
-     
-     You must complete this course before purchasing a car.
-     Also, getting access to the next level courses, you must complete all previous courses and have the appropriate number of race participation records.
-     
-     If the previously completed courses have any updates, they must be completed again prior to the others."
+    "차량의 조작법을 배워보자"
 # #################################################### Beginner license messeage ##
-ta02_name "1. License Test"
-ta02_desc
-    "Did you practice enough? Doesn’t look like it...
-     Well, whatever. We’ll find out soon enough.
-     It’s time to evaluate your skills.
-     
-     Oh, remember!
-     Collisions or deviating from the course are prohibited.
-     
-     By earning a bronze medal, you will pass the test."
-ba01_name "2. Starting and Stopping 1"
+ba01_name "1. 출발과 가속 1"
 ba01_desc
-    "Now for your first full lesson.
-     We will practice starting, accelerating, and stopping - the basics of a racing cars.
-     Start the car and stop the car precisely at the designated location when the lesson starts.
-     
-     Deviating from the course or collisions are prohibited.
-     
-     Now, press the button to begin the phase 1 lesson."
-ba02_name "3. Keep Note of the Braking Distance"
+    "'Clipping Point"
+        에서는
+            고급
+                미션
+                    경기에
+                        참가하기
+                            위해
+                                특정
+                                    면허가
+                                        필요하며
+                                            바로
+                                                이곳에서
+                                                    한
+                                                        등급의
+                                                            시험을
+                                                                모두
+                                                                    합격하게
+                                                                        되면
+                                                                            해당
+                                                                                등급의
+                                                                                    면허가
+                                                                                        주어지고
+                                                                                            다음과정의
+                                                                                                드라이빙 스쿨에 도전 할 수 있습니다.
+각 과정은 동메달 이상을 획득하여야 합니다.
+해당 과정마다 시험을 치루기 전에 미리보기를 눌러 데모차량의 움직임을 살펴보는 것이 도움이 될 것입니다.
+데모차량은 시험 도중에라도 메뉴창을 불러서 아무때나 살펴 볼 수 있습니다.
+이번 과정에선 가장 기본이 되는 차량의 출발과 가속에 대해 간단히 집고 넘어 가겠습니다.
+모든 면허시험은 길 밖으로 벗어나서도 안 되고 충돌이 있어서도 안 됩니다.
+자 그럼 시작 버튼을 눌러 제 1단계 시험을 치루시기 바랍니다."
+ba02_name "2. 출발과 가속 2"
 ba02_desc
-    "In racing, deceleration is more important than acceleration.
+    "고성능 차량은 급 출발시 뒷바퀴가 헛돌게 되니 엑셀을 덜 밟는다는 기분을 가집시다.
      
-     Only proper deceleration will allow for smooth acceleration.
-     For proper deceleration, you must always know your car’s braking distance capability.
+     바퀴가 헛돌지 않으면서 최대한의 힘을 낼 수 있도록 잘 컨트롤 하는것이 이번 과정의 주된 내용입니다.
      
-     Now let’s practice your deceleration by stopping the car at a specific location."
-ba03_name "4. Automobile Layout (FF)"
+     빨리 가기 위해, 때로는 엑셀에서 발을 때는 용기가 필요합니다."
+ba03_name "3. 구동방식에 따른 특성 (FF)"
 ba03_desc
-    "Let’s learn the characteristics of a FF vehicle this time.
+    "이번 과정에선 FF차량의 특성을 익히도록 하겠습니다.
      
-     The forward wheel drive vehicle has a tendency to understeer, so you can feel the stiffness while handling.
+     FF(전륜구동) 차량은 기본적으로 Understeer의 성향이 나타나서 핸들링시 뻑뻑한 느낌이 나게됩니다..
      
-     Understeering is a phenomenon that happens when you under turn the steering wheel and the car goes in the opposite direction."
-ba04_name "5. Automobile Layout (FR)"
+     Understeer란, 핸들을 돌렸을 때 핸들링이 되지 않고 진행하던 방향으로 계속 미끄러지는 현상을 말합니다."
+ba04_name "4. 구동방식에 따른 특성 (FR)"
 ba04_desc
-    "Now let’s learn the characteristics of a FR vehicle.
+    "이번엔 FR차량의 특성을 익혀봅시다.
      
-     The rearward wheel drive pushes the car, so it has a tendency to oversteer.
-     Oversteering is a phenomenon that happens when you overturn the steering wheel and the car turns more than you initially intended it to.
+     FR(후륜구동) 차량은 뒷바퀴로 차를 밀어주기 때문에 Oversteer 성향을 갖고 있습니다.
+     Oversteer란, 핸들을 돌렸을 때 조향각보다 차체가 더 많이 회전하게 되는 현상을 말합니다.
      
-     The front wheels manage direction while the rear wheels move the car so it becomes more dynamic and mobile. This is one of the reasons why most sports vehicles use this type.
+     차량의 앞부분에서 뒷바퀴까지 구동력을 전달해야 하는 동력손실의 부담이 있지만 앞바퀴는 조향만을 담당하고 뒷바퀴는 차를 밀어줌으로써 다이나믹한 움직임을 보장받을수 있기 때문에 많은 Sports형 차량들이 이 방식을 사용합니다.
      "
-ba05_name "6. Pit-In"
+ba05_name "5. 코너링의 기본 1"
 ba05_desc
     "코너링은 기본적으로 바깥에서 진입하여 안쪽으로 붙었다가 다시 바깥으로 붙어서 빠져나가는 Out-In-Out을 기본으로 합니다.
      
